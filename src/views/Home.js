@@ -43,7 +43,7 @@ function Home() {
             <p className='text-white mt-6 font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo rem modi enim, minima incidunt velit odio magni ex! Laborum quis asperiores vero perferendis officiis a cupiditate doloremque optio. Voluptates?</p>
         </div>
         {/* My Skills */}
-        <div className='grid grid-cols-9 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
+        <div className='grid grid-cols-6 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
             <button data-tip data-for="Html" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <AiFillHtml5 className='text-3xl text-gray-900'/>
             </button>
@@ -105,7 +105,7 @@ function Home() {
         </div>
 
         {/* Design Skills */}
-        <div className='grid grid-cols-9 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
+        <div className='grid grid-cols-6 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
             <div data-tip data-for="Illustrator" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiAdobeillustrator className='text-3xl text-gray-900'/>
             </div>
@@ -146,7 +146,7 @@ function Home() {
         </div>
         <hr className='border-gray-600 mt-10'/>
                {/* Social Media */}
-        <div className='grid grid-cols-9 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
+        <div className='grid grid-cols-6 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
             <button data-tip data-for="Github" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <a href='https://github.com/jngnandan/' target='_blank' rel='noreferrer'>
                 <FaGithub className='text-3xl text-gray-900'/>
