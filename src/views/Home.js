@@ -31,6 +31,150 @@ import {FaTwitter} from 'react-icons/fa'
 import {AiFillMediumSquare} from 'react-icons/ai'
 import {BsYoutube} from 'react-icons/bs'
 
+import ProjectItem from '../views/ProjectItem'
+
+import {Link} from 'react-router-dom'
+
+
+const ListOfProjects = [
+    {
+        id: 1,
+        name: 'Destination Search',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/destination-search-output-v2.gif',
+        title: 'DestinationSearch',
+    },
+    {
+        id: 2,
+        name: 'Simple Todo',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/simple-todos-output.gif',
+        title: 'SimpleTodo',
+    },
+    {
+        id: 3,
+        name: 'Balance App',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/cash-withdrawal-output-v2.gif',
+        title: 'BalanceApp',
+    },
+    {
+        id: 4,
+        name: 'Google Search App',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/google-search-suggestions-output.gif',
+        title: 'GoogleSearchApp',
+    },
+    {
+        id: 5,
+        name: 'Browser History App',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/browser-history-output.gif',
+        title: 'BrowserHistoryApp',
+    },
+    {
+        id: 6,
+        name: 'Gallery App',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/gallery-output.gif',
+        title: 'GalleryApp',
+    },
+    {
+        id: 7,
+        name: 'App Store',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/app-store-output.gif',
+        title: 'AppStore',
+    },
+    {
+        id: 8,
+        name: 'Coin Toss Game',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/coin-toss-game-output.gif',
+        title: 'CoinTossGame',
+    },
+    {
+        id: 9,
+        name: 'Reviews App',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/reviews-app-output.gif',
+        title: 'ReviewsApp',
+    },
+    {
+        id: 10,
+        name: 'Comments App',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/comments-app-output.gif',
+        title: 'CommentsApp',
+    },
+    {
+        id: 11,
+        name: 'Appointments App',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/appointments-app-output.gif',
+        title: 'AppointmentsApp',
+    },
+    {
+        id: 12,
+        name: 'Money Manager',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/money-manager-output.gif',
+        title: 'MoneyManager',
+    },
+    {
+        id: 13,
+        name: 'Digital Timer',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/digital-timer-output.gif',
+        title: 'DigitalTimer',
+    },
+    {
+        id: 14,
+        name: 'FAQs',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/faqs-output-v3.gif',
+        title: 'FAQs',
+    },
+    {
+        id: 15,
+        name: 'Password Manager',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/passowrd-manager-output-v0.gif',
+        title: 'PasswordManager',
+    },
+    {
+        id: 16,
+        name: 'Blog List',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/routing-practice-blog-list-desktop-output.gif',
+        title: 'BlogList',
+    },
+    {
+        id: 17,
+        name: 'Cryptocurrency Tracker',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/cryptocurrency-tracker-output.gif',
+        title: 'CryptocurrencyTracker',
+    },
+    {
+        id: 18,
+        name: 'IPL Dashboard',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/ipl-dashboard-output-v2.gif',
+        title: 'IPLDashboard',
+    },
+    {
+        id: 19,
+        name: 'Nxt Trendz Authorisation',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authorisation-output-v2.gif',
+        title: 'NxtTrendzAuthorisation',
+    },
+    {
+        id: 20,
+        name: 'Events',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/events-output.gif',
+        title: 'Events',
+    },
+    {
+        id: 21,
+        name: 'Github Popular Repos',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/github-popular-repos-output.gif',
+        title: 'GithubPopularRepos',
+    },
+    {
+        id: 22,
+        name: 'Nxt Trendz Product Details',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-output-v0.gif',
+        title: 'NxtTrendzProductDetails',
+    },
+
+]
+ 
+
+
+
 function Home() {
   return (
     <div>
@@ -44,35 +188,35 @@ function Home() {
         </div>
         {/* My Skills */}
         <div className='grid grid-cols-6 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
-            <button data-tip data-for="Html" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="Html" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <AiFillHtml5 className='text-3xl text-gray-900'/>
             </button>
-            <button data-tip data-for="Css" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="Css" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <FaCss3Alt className='text-3xl text-gray-900'/>
             </button>
-            <button data-tip data-for="Bootstrap" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="Bootstrap" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <FaBootstrap className='text-3xl text-gray-900'/>
             </button>
-            <button data-tip data-for="Tailwind" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="Tailwind" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiTailwindcss className='text-3xl text-gray-900'/>
             </button>
 
-            <button data-tip data-for="Javascript" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="Javascript" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiJavascript className='text-2xl text-gray-900'/>
             </button>
 
-            <button data-tip data-for="React" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="React" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiReact className='text-3xl text-gray-900'/>
             </button>
 
-            <button data-tip data-for="SQLite" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="SQLite" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiSqlite className='text-3xl text-gray-900'/>
             </button>
 
-            <button data-tip data-for="Node" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="Node" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <GrNode className='text-3xl text-gray-900'/>
             </button>
-            <button data-tip data-for="ReactNative" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="ReactNative" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <TbBrandReactNative className='text-3xl text-gray-900'/>
             </button>
             <ReactTooltip id='Html' place='top' effect='solid'>
@@ -106,22 +250,22 @@ function Home() {
 
         {/* Design Skills */}
         <div className='grid grid-cols-6 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
-            <div data-tip data-for="Illustrator" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Illustrator" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiAdobeillustrator className='text-3xl text-gray-900'/>
             </div>
-            <div data-tip data-for="Photoshop" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Photoshop" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiAdobephotoshop className='text-3xl text-gray-900'/>
             </div>
-            <div data-tip data-for="Sketch" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Sketch" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiSketch className='text-3xl text-gray-900'/>
             </div>
-            <div data-tip data-for="Figma" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Figma" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiFigma className='text-3xl text-gray-900'/>
             </div>
-            <div data-tip data-for="XD" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="XD" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiAdobexd className='text-3xl text-gray-900'/>
             </div>
-            <div data-tip data-for="Material Design" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Material Design" className='flex items-center hover:bg-gray-400 justify-center bg-gray-500 rounded-full h-12 w-12'>
                 <SiMaterialdesign className='text-3xl text-gray-900'/>
             </div>
 
@@ -132,7 +276,7 @@ function Home() {
                 Photoshop
             </ReactTooltip>
             <ReactTooltip id='Sketch' place='top' effect='solid'>
-                Sketch
+                SketchApp
             </ReactTooltip>
             <ReactTooltip id='Figma' place='top' effect='solid'>
                 Figma
@@ -202,76 +346,13 @@ function Home() {
                 {/* Projects */}
                 <div className='bg-gray-900 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
                     <h1 className='text-3xl text-white font-semibold'><span className="font-light">My</span> Projects 🚀</h1>
+
                     <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/destination-search-output-v2.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/simple-todos-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/cash-withdrawal-output-v2.gif" alt="" className='w-full h-full object-contain rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/google-search-suggestions-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/browser-history-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/gallery-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/app-store-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/coin-toss-game-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/reviews-app-output-v2.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/comments-app-output-v0.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/appointments-app-output.gif"  alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/money-manager-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/digital-timer-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/faqs-output-v3.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/passowrd-manager-output-v0.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/routing-practice-blog-list-desktop-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/cryptocurrency-tracker-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/ipl-dashboard-output-v2.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authorisation-output-v2.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/events-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/github-popular-repos-output.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-                        <div className='bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center'>
-                            <img src="https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-output-v0.gif" alt="" className='w-full h-full object-scale-down rounded-lg'/>
-                        </div>
-
-
+                        {ListOfProjects.map(eachProject => (
+                            <ProjectItem key={eachProject.id} projectDetails={eachProject}/>
+                        ))}
                     </div>
+
                 </div>
 
         {/* Footer */}
