@@ -24,6 +24,13 @@ import {SiAdobexd} from 'react-icons/si'
 import {SiMaterialdesign} from 'react-icons/si'
 import ReactTooltip from 'react-tooltip'
 
+import {FaLinkedin} from 'react-icons/fa'
+import {FaGithub} from 'react-icons/fa'
+import {FaBehance} from 'react-icons/fa'
+import {FaTwitter} from 'react-icons/fa'
+import {AiFillMediumSquare} from 'react-icons/ai'
+import {BsYoutube} from 'react-icons/bs'
+
 function Home() {
   return (
     <div>
@@ -37,66 +44,140 @@ function Home() {
         </div>
         {/* My Skills */}
         <div className='grid grid-cols-9 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="Html" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <AiFillHtml5 className='text-3xl text-gray-900'/>
-            </div>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            </button>
+            <button data-tip data-for="Css" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <FaCss3Alt className='text-3xl text-gray-900'/>
-            </div>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            </button>
+            <button data-tip data-for="Bootstrap" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <FaBootstrap className='text-3xl text-gray-900'/>
-            </div>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            </button>
+            <button data-tip data-for="Tailwind" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiTailwindcss className='text-3xl text-gray-900'/>
-            </div>
+            </button>
 
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="Javascript" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiJavascript className='text-2xl text-gray-900'/>
-            </div>
+            </button>
 
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="React" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiReact className='text-3xl text-gray-900'/>
-            </div>
+            </button>
 
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="SQLite" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiSqlite className='text-3xl text-gray-900'/>
-            </div>
+            </button>
 
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <button data-tip data-for="Node" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <GrNode className='text-3xl text-gray-900'/>
-            </div>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            </button>
+            <button data-tip data-for="ReactNative" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <TbBrandReactNative className='text-3xl text-gray-900'/>
-            </div>
-            <ReactTooltip id='html' place='top' effect='solid'>
+            </button>
+            <ReactTooltip id='Html' place='top' effect='solid'>
                 HTML
+            </ReactTooltip>
+            <ReactTooltip id='Css' place='top' effect='solid'>
+                CSS
+            </ReactTooltip>
+            <ReactTooltip id='Bootstrap' place='top' effect='solid'>
+                Bootstrap
+            </ReactTooltip>
+            <ReactTooltip id='Tailwind' place='top' effect='solid'>
+                Tailwind
+            </ReactTooltip>
+            <ReactTooltip id='Javascript' place='top' effect='solid'>
+                Javascript
+            </ReactTooltip>
+            <ReactTooltip id='React' place='top' effect='solid'>
+                React.js
+            </ReactTooltip>
+            <ReactTooltip id='SQLite' place='top' effect='solid'>
+                SQLite
+            </ReactTooltip>
+            <ReactTooltip id='Node' place='top' effect='solid'>
+                Node.js
+            </ReactTooltip>
+            <ReactTooltip id='ReactNative' place='top' effect='solid'>
+                React Native
             </ReactTooltip>
         </div>
 
         {/* Design Skills */}
         <div className='grid grid-cols-9 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Illustrator" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiAdobeillustrator className='text-3xl text-gray-900'/>
             </div>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Photoshop" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiAdobephotoshop className='text-3xl text-gray-900'/>
             </div>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Sketch" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiSketch className='text-3xl text-gray-900'/>
             </div>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Figma" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiFigma className='text-3xl text-gray-900'/>
             </div>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="XD" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiAdobexd className='text-3xl text-gray-900'/>
             </div>
-            <div className='flex items-center justify-center bg-gray-600 rounded-full h-12 w-12'>
+            <div data-tip data-for="Material Design" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
                 <SiMaterialdesign className='text-3xl text-gray-900'/>
             </div>
 
+            <ReactTooltip id='Illustrator' place='top' effect='solid'>
+                Illustrator
+            </ReactTooltip>
+            <ReactTooltip id='Photoshop' place='top' effect='solid'>
+                Photoshop
+            </ReactTooltip>
+            <ReactTooltip id='Sketch' place='top' effect='solid'>
+                Sketch
+            </ReactTooltip>
+            <ReactTooltip id='Figma' place='top' effect='solid'>
+                Figma
+            </ReactTooltip>
+            <ReactTooltip id='XD' place='top' effect='solid'>
+                Adobe XD
+            </ReactTooltip>
+            <ReactTooltip id='Material Design' place='top' effect='solid'>
+                Material Design
+            </ReactTooltip>
         </div>
+        <hr className='border-gray-600 mt-10'/>
+               {/* Social Media */}
+        <div className='grid grid-cols-9 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
+            <button data-tip data-for="Github" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+                <a href='https://github.com/jngnandan/' target='_blank' rel='noreferrer'>
+                <FaGithub className='text-3xl text-gray-900'/>
+                </a>
+            </button>
+            <button data-tip data-for="Linkedin" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+                <a href='https://www.linkedin.com/in/jngnandan/' target='_blank' rel='noreferrer'>
+                <FaLinkedin className='text-3xl text-gray-900'/>
+                </a>
+            </button>
+            <button data-tip data-for="Twitter" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+                <a href='https://twitter.com/girish_nandanj' target='_blank' rel='noreferrer'>
+                <FaTwitter className='text-3xl text-gray-900'/>
+                </a>
+            </button>
+            <button data-tip data-for="Medium" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+                <a href="https://medium.com/@jngnandan" target='_blank' rel='noreferrer'>
+                <AiFillMediumSquare className='text-3xl text-gray-900'/>
+                </a>
+            </button>
+            <button data-tip data-for="Behance" className='flex items-center hover:bg-gray-400 justify-center bg-gray-600 rounded-full h-12 w-12'>
+                <a href="https://www.behance.net/nandanj" target='_blank' rel='noreferrer'>
+                <FaBehance className='text-3xl text-gray-900'/>
+                </a>
+            </button>
+            
+        </div>
+            
 
         </div>
+    
         {/* Skills */}
         <div className='bg-gray-800 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
         <h1 className='text-3xl text-white font-semibold'><span className="font-light">Better</span> Experience ⚒️</h1>
@@ -193,6 +274,17 @@ function Home() {
                     </div>
                 </div>
 
+        {/* Footer */}
+                <div className='bg-gray-800 p-8'>
+                    <div className='flex flex-col justify-center items-center'>
+                        <div className='flex flex-row justify-center items-center'>
+                            {/* <h1 className='text-white text-2xl font-bold'>Girish Nandan</h1> */}
+                        </div>
+                        <div className='flex flex-row justify-center items-center'>
+                            <p className='text-white text-sm'>© 2022 Girish Nandan. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
                 
         
 
