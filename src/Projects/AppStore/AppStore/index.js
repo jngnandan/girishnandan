@@ -331,7 +331,7 @@ export class AppStore extends Component {
           </div>
 
           {/* App Items */}
-          <div className='grid grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-2 h-screen'>
+          <div className='flex flex-row flex-wrap justify-center items-center'>
             {filterSearch.map(eachItem => (
               <AppItem value={eachItem.appName} appsList={eachItem} key={eachItem.appId} />
             ))}
