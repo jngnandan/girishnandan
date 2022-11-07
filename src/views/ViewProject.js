@@ -8,6 +8,7 @@ import AppStore from '../../src/Projects/AppStore/AppStore'
 import SimpleTodo from '../../src/Projects/SimpleTodo/SimpleTodos'
 import BrowserHistoryApp from '../Projects/BrowserHistoryApp/BrowserHistoryApp'
 import GoogleSearchApp from '../Projects/GoogleSearchApp/GoogleSuggestions'
+import Gallery from '../Projects/GalleryApp/Gallery'
  
 
 
@@ -57,6 +58,9 @@ function ViewProject() {
         }
         if (path === 'BrowserHistoryApp') {
           return <BrowserHistoryApp />
+        }
+        if (path === 'GalleryApp') {
+          return <Gallery />
         }
         
         
