@@ -2,11 +2,13 @@
 
 import React from 'react'
 import {useNavigate, useLocation} from 'react-router-dom'
-
+// h-screen bg-cover overflow-auto p-20 px-6 md:px-16 lg:px-44 xl:px-60 py-10
 
 import AppStore from '../../src/Projects/AppStore/AppStore'
 import SimpleTodo from '../../src/Projects/SimpleTodo/SimpleTodos'
+import BrowserHistoryApp from '../Projects/BrowserHistoryApp/BrowserHistoryApp'
 import GoogleSearchApp from '../Projects/GoogleSearchApp/GoogleSuggestions'
+ 
 
 
 const suggestionsList = [
@@ -52,6 +54,9 @@ function ViewProject() {
         }
         if (path === 'GoogleSearchApp') {
           return <GoogleSearchApp suggestionsList={suggestionsList} />
+        }
+        if (path === 'BrowserHistoryApp') {
+          return <BrowserHistoryApp />
         }
         
         
