@@ -9,7 +9,7 @@ import SimpleTodo from '../../src/Projects/SimpleTodo/SimpleTodos'
 import BrowserHistoryApp from '../Projects/BrowserHistoryApp/BrowserHistoryApp'
 import GoogleSearchApp from '../Projects/GoogleSearchApp/GoogleSuggestions'
 import Gallery from '../Projects/GalleryApp/Gallery'
- 
+import CoinToss from '../Projects/CoinTossGame/CoinToss'
 
 
 const suggestionsList = [
@@ -61,6 +61,9 @@ function ViewProject() {
         }
         if (path === 'GalleryApp') {
           return <Gallery />
+        }
+        if (path === 'CoinTossGame') {
+          return <CoinToss />
         }
         
         
