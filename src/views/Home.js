@@ -189,7 +189,7 @@ function Home() {
         <h2 className='text-3xl text-white font-light'>I'm Product Designer & Frontend Developer</h2>
 
         <div>
-            <p className='text-white mt-6 font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta illo rem modi enim, minima incidunt velit odio magni ex! Laborum quis asperiores vero perferendis officiis a cupiditate doloremque optio. Voluptates?</p>
+            <p className='text-white mt-6 font-light'>These are my works I have been doing. I'll update Book section and Product Design section soon</p>
         </div>
         {/* My Skills */}
         <div className='grid grid-cols-6 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
@@ -333,17 +333,17 @@ function Home() {
                                 <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
                                     <h1 className="text-5xl">📐</h1>
                                     <h1 className='text-white font-semibold text-lg mt-3'>Product Design</h1>
-                                    <p className='text-white font-light text-sm mt-2 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit, consectetur amet dolor</p>
+                                    <p className='text-white font-light text-sm mt-2 text-center'>From UI, UX to Usability testing and Design systems</p>
                                 </div>
                                 <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
                                     <h1 className="text-5xl">🧑🏽‍💻</h1>
                                     <h1 className='text-white font-semibold text-lg mt-3 text-center'>Frontend Development</h1>
-                                    <p className='text-white font-light text-sm mt-2 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit, consectetur amet dolor</p>
+                                    <p className='text-white font-light text-sm mt-2 text-center'>More React, SQLite, Node.js, Firebase, React Native projects are coming soon!</p>
                                 </div>
                                 <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
                                     <h1 className="text-5xl">📚</h1>
                                     <h1 className='text-white font-semibold text-lg mt-3'>Book Notes</h1>
-                                    <p className='text-white font-light text-sm mt-2 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit, consectetur amet dolor</p>
+                                    <p className='text-white font-light text-sm mt-2 text-center'>Here I'll share some notes on the books that I read what I think about them etc..</p>
                                 </div>
                         </div>
                 </div>
