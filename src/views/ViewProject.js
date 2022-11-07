@@ -5,6 +5,7 @@ import {useNavigate, useLocation} from 'react-router-dom'
 
 
 import AppStore from '../../src/Projects/AppStore/AppStore'
+import SimpleTodo from '../../src/Projects/SimpleTodo/SimpleTodos'
 
   const ProjectList = [
     {
@@ -31,9 +32,13 @@ function ViewProject() {
   return (
     <div>
       {ProjectList.map((project) => {
-        if (path === project.name) {
+        if (path === 'AppStore') {
           return <AppStore />
         }
+        if (path === 'SimpleTodos') {
+          return <SimpleTodo />
+        }
+      
       }
       )}
     </div>

@@ -1,6 +1,9 @@
 
 import React from 'react'
 
+import SimpleTodos from '../Projects/SimpleTodo/SimpleTodos'
+
+
 import {AiOutlineCloseCircle} from 'react-icons/ai'
 import {RiMenuLine} from 'react-icons/ri'
 
@@ -36,6 +39,8 @@ import ProjectItem from '../views/ProjectItem'
 import {Link} from 'react-router-dom'
 
 
+
+
 const ListOfProjects = [
     {
         id: 1,
@@ -47,7 +52,7 @@ const ListOfProjects = [
         id: 2,
         name: 'Simple Todo',
         image: 'https://assets.ccbp.in/frontend/content/react-js/simple-todos-output.gif',
-        title: 'SimpleTodo',
+        title: 'SimpleTodos',
     },
     {
         id: 3,
@@ -318,7 +323,6 @@ function Home() {
             </button>
             
         </div>
-            
 
         </div>
     
