@@ -10,7 +10,7 @@ import BrowserHistoryApp from '../Projects/BrowserHistoryApp/BrowserHistoryApp'
 import GoogleSearchApp from '../Projects/GoogleSearchApp/GoogleSuggestions'
 import Gallery from '../Projects/GalleryApp/Gallery'
 import CoinToss from '../Projects/CoinTossGame/CoinToss'
-
+import Comments from '../Projects/CommentsApp/Comments'
 
 const suggestionsList = [
   {id: 1, suggestion: 'Price of Ethereum'},
@@ -64,6 +64,9 @@ function ViewProject() {
         }
         if (path === 'CoinTossGame') {
           return <CoinToss />
+        }
+        if (path === 'CommentsApp') {
+          return <Comments />
         }
         
         
