@@ -12,6 +12,8 @@ import CoinToss from '../Projects/CoinTossGame/CoinToss'
 import Comments from '../Projects/CommentsApp/Comments'
 import MoneyManager from '../Projects/MoneyManager/MoneyManager'
 import ReviewsApp from '../Projects/ReviewsApp/ReviewsApp'
+import Appointments from '../Projects/AppontmentApp/Appointments'
+
 
 const suggestionsList = [
   {id: 1, suggestion: 'Price of Ethereum'},
@@ -75,6 +77,10 @@ function ViewProject() {
         if (path === 'ReviewsApp') {
           return <ReviewsApp />
         }
+        if (path === 'AppointmentsApp') {
+          return <Appointments />
+        }
+
         
         
       
