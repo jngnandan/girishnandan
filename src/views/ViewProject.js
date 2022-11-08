@@ -2,7 +2,6 @@
 
 import React from 'react'
 import {useNavigate, useLocation} from 'react-router-dom'
-// h-screen bg-cover overflow-auto p-20 px-6 md:px-16 lg:px-44 xl:px-60 py-10
 
 import AppStore from '../../src/Projects/AppStore/AppStore'
 import SimpleTodo from '../../src/Projects/SimpleTodo/SimpleTodos'
@@ -11,6 +10,8 @@ import GoogleSearchApp from '../Projects/GoogleSearchApp/GoogleSuggestions'
 import Gallery from '../Projects/GalleryApp/Gallery'
 import CoinToss from '../Projects/CoinTossGame/CoinToss'
 import Comments from '../Projects/CommentsApp/Comments'
+import MoneyManager from '../Projects/MoneyManager/MoneyManager'
+
 
 const suggestionsList = [
   {id: 1, suggestion: 'Price of Ethereum'},
@@ -68,6 +69,9 @@ function ViewProject() {
         if (path === 'CommentsApp') {
           return <Comments />
         }
+        if (path === 'MoneyManager') {
+          return <MoneyManager />
+        }
         
         
       
@@ -78,3 +82,5 @@ function ViewProject() {
 }
 
 export default ViewProject
+
+// h-screen bg-cover overflow-auto p-20 px-6 md:px-16 lg:px-44 xl:px-60 py-10
