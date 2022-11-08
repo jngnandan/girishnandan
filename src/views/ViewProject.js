@@ -13,7 +13,7 @@ import Comments from '../Projects/CommentsApp/Comments'
 import MoneyManager from '../Projects/MoneyManager/MoneyManager'
 import ReviewsApp from '../Projects/ReviewsApp/ReviewsApp'
 import Appointments from '../Projects/AppontmentApp/Appointments'
-
+import FaqApp from '../Projects/FaqApp/FaqApp.js'
 
 const suggestionsList = [
   {id: 1, suggestion: 'Price of Ethereum'},
@@ -79,6 +79,9 @@ function ViewProject() {
         }
         if (path === 'AppointmentsApp') {
           return <Appointments />
+        }
+        if (path === 'FAQs') {
+          return <FaqApp />
         }
 
         
