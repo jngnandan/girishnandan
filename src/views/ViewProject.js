@@ -14,6 +14,7 @@ import MoneyManager from '../Projects/MoneyManager/MoneyManager'
 import ReviewsApp from '../Projects/ReviewsApp/ReviewsApp'
 import Appointments from '../Projects/AppontmentApp/Appointments'
 import FaqApp from '../Projects/FaqApp/FaqApp.js'
+import PasswordManager from '../Projects/PasswordManager/PasswordManager'
 
 const suggestionsList = [
   {id: 1, suggestion: 'Price of Ethereum'},
@@ -82,6 +83,9 @@ function ViewProject() {
         }
         if (path === 'FAQs') {
           return <FaqApp />
+        }
+        if (path === 'PasswordManager') {
+          return <PasswordManager />
         }
 
         
