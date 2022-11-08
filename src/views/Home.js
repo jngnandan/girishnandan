@@ -134,9 +134,9 @@ const ListOfProjects = [
     },
     {
         id: 16,
-        name: 'Blog List',
+        name: 'Fetching and Routing',
         image: 'https://assets.ccbp.in/frontend/content/react-js/routing-practice-blog-list-desktop-output.gif',
-        title: 'BlogList',
+        title: 'FetchingAndRouting',
     },
     {
         id: 17,

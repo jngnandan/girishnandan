@@ -17,7 +17,7 @@ import FaqApp from '../Projects/FaqApp/FaqApp.js'
 import PasswordManager from '../Projects/PasswordManager/PasswordManager'
 import DigitalTimer from '../Projects/DigitalTimer/index.js'
 import CashWithdrawal from '../Projects/CashWithdrawal/CashWithdrawalApp'
-
+import BlogList from '../Projects/FetchingAndRouting/components/Home/index.js'
 
 const suggestionsList = [
   {id: 1, suggestion: 'Price of Ethereum'},
@@ -95,6 +95,9 @@ function ViewProject() {
         }
         if (path === 'CashWithdrawal') {
           return <CashWithdrawal />
+        }
+        if (path === 'FetchingAndRouting') {
+          return <BlogList />
         }
 
         
