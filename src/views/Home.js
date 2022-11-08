@@ -38,16 +38,17 @@ import ProjectItem from '../views/ProjectItem'
 
 import {Link} from 'react-router-dom'
 
+import SSG_Security from '../assets/images/SSG_Security.gif'
 
 
 
 const ListOfProjects = [
-    {
-        id: 1,
-        name: 'Destination Search',
-        image: 'https://assets.ccbp.in/frontend/content/react-js/destination-search-output-v2.gif',
-        title: 'DestinationSearch',
-    },
+    // {
+    //     id: 1,
+    //     name: 'Destination Search',
+    //     image: 'https://assets.ccbp.in/frontend/content/react-js/destination-search-output-v2.gif',
+    //     title: 'DestinationSearch',
+    // },
     {
         id: 2,
         name: 'Simple Todo',
@@ -138,42 +139,42 @@ const ListOfProjects = [
         image: 'https://assets.ccbp.in/frontend/content/react-js/routing-practice-blog-list-desktop-output.gif',
         title: 'FetchingAndRouting',
     },
-    {
-        id: 17,
-        name: 'Cryptocurrency Tracker',
-        image: 'https://assets.ccbp.in/frontend/content/react-js/cryptocurrency-tracker-output.gif',
-        title: 'CryptocurrencyTracker',
-    },
-    {
-        id: 18,
-        name: 'IPL Dashboard',
-        image: 'https://assets.ccbp.in/frontend/content/react-js/ipl-dashboard-output-v2.gif',
-        title: 'IPLDashboard',
-    },
-    {
-        id: 19,
-        name: 'Nxt Trendz Authorisation',
-        image: 'https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authorisation-output-v2.gif',
-        title: 'NxtTrendzAuthorisation',
-    },
-    {
-        id: 20,
-        name: 'Events',
-        image: 'https://assets.ccbp.in/frontend/content/react-js/events-output.gif',
-        title: 'Events',
-    },
-    {
-        id: 21,
-        name: 'Github Popular Repos',
-        image: 'https://assets.ccbp.in/frontend/content/react-js/github-popular-repos-output.gif',
-        title: 'GithubPopularRepos',
-    },
-    {
-        id: 22,
-        name: 'Nxt Trendz Product Details',
-        image: 'https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-output-v0.gif',
-        title: 'NxtTrendzProductDetails',
-    },
+    // {
+    //     id: 17,
+    //     name: 'Cryptocurrency Tracker',
+    //     image: 'https://assets.ccbp.in/frontend/content/react-js/cryptocurrency-tracker-output.gif',
+    //     title: 'CryptocurrencyTracker',
+    // },
+    // {
+    //     id: 18,
+    //     name: 'IPL Dashboard',
+    //     image: 'https://assets.ccbp.in/frontend/content/react-js/ipl-dashboard-output-v2.gif',
+    //     title: 'IPLDashboard',
+    // },
+    // {
+    //     id: 19,
+    //     name: 'Nxt Trendz Authorisation',
+    //     image: 'https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-authorisation-output-v2.gif',
+    //     title: 'NxtTrendzAuthorisation',
+    // },
+    // {
+    //     id: 20,
+    //     name: 'Events',
+    //     image: 'https://assets.ccbp.in/frontend/content/react-js/events-output.gif',
+    //     title: 'Events',
+    // },
+    // {
+    //     id: 21,
+    //     name: 'Github Popular Repos',
+    //     image: 'https://assets.ccbp.in/frontend/content/react-js/github-popular-repos-output.gif',
+    //     title: 'GithubPopularRepos',
+    // },
+    // {
+    //     id: 22,
+    //     name: 'Nxt Trendz Product Details',
+    //     image: 'https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-output-v0.gif',
+    //     title: 'NxtTrendzProductDetails',
+    // },
 
 ]
  
@@ -358,6 +359,22 @@ function Home() {
                     </div>
 
                 </div>
+                 {/* Projects */}
+                 <div className='bg-gray-900 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+                    <h1 className='text-3xl text-white font-semibold'><span className="font-light">Recent</span> Projects 📌 </h1>
+
+                    <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
+                    <a href='https://ssg-services.vercel.app/'>
+                            <div className="bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center">
+                            <img className='w-full h-44 md:h-60 object-scale-down rounded-lg' src={SSG_Security} />
+                            </div>
+                    </a>
+                    </div>
+
+                </div>
+
+
+
 
         {/* Footer */}
                 <div className='bg-gray-800 p-8'>
