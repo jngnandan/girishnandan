@@ -15,6 +15,8 @@ import ReviewsApp from '../Projects/ReviewsApp/ReviewsApp'
 import Appointments from '../Projects/AppontmentApp/Appointments'
 import FaqApp from '../Projects/FaqApp/FaqApp.js'
 import PasswordManager from '../Projects/PasswordManager/PasswordManager'
+import DigitalTimer from '../Projects/DigitalTimer/index.js'
+
 
 const suggestionsList = [
   {id: 1, suggestion: 'Price of Ethereum'},
@@ -86,6 +88,9 @@ function ViewProject() {
         }
         if (path === 'PasswordManager') {
           return <PasswordManager />
+        }
+        if (path === 'DigitalTimer') {
+          return <DigitalTimer />
         }
 
         

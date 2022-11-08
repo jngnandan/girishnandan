@@ -314,7 +314,7 @@ export class AppStore extends Component {
     const filterSearch = filteredApps.filter(eachitem => eachitem.appName.toLowerCase().includes(searchInput.toLowerCase()))
 
     return (
-      <div className='bg-gradient-to-r from-yellow-100 to-green-200 h-screen bg-cover overflow-auto	 p-20 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+      <div className='bg-gradient-to-b from-sky-100 to-green-200 h-screen bg-cover overflow-auto	 p-20 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
         <div className='flex flex-col items-center h-96'>
           <h1 className='text-3xl font-bold text-gray-600 pb-2'>App Store</h1>
 
