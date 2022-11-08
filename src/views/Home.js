@@ -39,6 +39,7 @@ import ProjectItem from '../views/ProjectItem'
 import {Link} from 'react-router-dom'
 
 import SSG_Security from '../assets/images/SSG_Security.gif'
+import SecurityManagementApp from '../assets/images/SecurityManagementApp.gif'
 
 
 
@@ -359,9 +360,9 @@ function Home() {
                     </div>
 
                 </div>
-                 {/* Projects */}
+                 {/* Recent Projects */}
                  <div className='bg-gray-900 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
-                    <h1 className='text-3xl text-white font-semibold'><span className="font-light">Recent</span> Projects 📌 </h1>
+                    <h1 className='text-3xl text-white font-semibold'><span className="font-light">Recent</span> Projects 📑 </h1>
 
                     <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
                     <a href='https://ssg-services.vercel.app/'>
@@ -370,7 +371,19 @@ function Home() {
                             </div>
                     </a>
                     </div>
+                </div>
 
+                {/* Ongoing Projects */}
+                <div className='bg-gray-900 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+                    <h1 className='text-3xl text-white font-semibold'><span className="font-light">Ongoing</span> Projects 📌 </h1>
+
+                    <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
+                    <a href='https://security-management-app.vercel.app/'>
+                            <div className="bg-gray-800 p-5 rounded-lg flex flex-col justify-center items-center">
+                            <img className='w-full h-44 md:h-60 object-scale-down rounded-lg' src={SecurityManagementApp} />
+                            </div>
+                    </a>
+                    </div>
                 </div>
 
 
