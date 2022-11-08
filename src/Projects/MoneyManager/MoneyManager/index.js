@@ -115,7 +115,7 @@ export class MoneyManager extends Component {
           </div>
         </div>
 
-        <div className='grid grid-cols-2 gap-2 w-full'>
+        <div className='grid md:grid-cols-2 gap-4 w-full'>
           <form onSubmit={this.addTransaction} className='shadow py-3 px-5 rounded h-80'>
             <h1 className='font-semibold text-gray-700 text-xl'>Add Transaction</h1>
             <div className='flex flex-col m-1'>
@@ -137,7 +137,7 @@ export class MoneyManager extends Component {
             </div>
           </form>
 
-          <div className='shadow py-3 px-3 rounded ml-3 card h-80'>
+          <div className='shadow py-3 px-3 rounded card h-80'>
             <h1 className='font-semibold text-gray-700 text-xl mb-2'>History</h1>
             <div className='grid grid-cols-4 gap-1 border p-2'>
               <p className='font-semibold text-semibold text-gray-400 w-16 text-center'>Title</p>
