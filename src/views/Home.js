@@ -56,9 +56,9 @@ const ListOfProjects = [
     },
     {
         id: 3,
-        name: 'Balance App',
+        name: 'CashWithdrawal',
         image: 'https://assets.ccbp.in/frontend/content/react-js/cash-withdrawal-output-v2.gif',
-        title: 'BalanceApp',
+        title: 'CashWithdrawal',
     },
     {
         id: 4,

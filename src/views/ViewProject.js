@@ -16,6 +16,7 @@ import Appointments from '../Projects/AppontmentApp/Appointments'
 import FaqApp from '../Projects/FaqApp/FaqApp.js'
 import PasswordManager from '../Projects/PasswordManager/PasswordManager'
 import DigitalTimer from '../Projects/DigitalTimer/index.js'
+import CashWithdrawal from '../Projects/CashWithdrawal/CashWithdrawalApp'
 
 
 const suggestionsList = [
@@ -91,6 +92,9 @@ function ViewProject() {
         }
         if (path === 'DigitalTimer') {
           return <DigitalTimer />
+        }
+        if (path === 'CashWithdrawal') {
+          return <CashWithdrawal />
         }
 
         
