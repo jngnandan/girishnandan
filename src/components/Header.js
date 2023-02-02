@@ -26,6 +26,12 @@ export default function Header() {
             </Link>
           </div>
 
+          <div className='flex flex-row m-5 invisible  md:visible'>
+            <Link to='/intro'>
+                <p className='mx-2 text-gray-200'>Intro</p>
+            </Link>
+          </div>
+
           {navbarOpen?
             <button onClick={() => setNavbarOpen(!navbarOpen)} className='flex flex-col justify-center items-center sm:block md:hidden'>
             <HiMenu className='text-3xl text-gray-200' />
@@ -41,6 +47,9 @@ export default function Header() {
         <div className='px-6 font-medium text-sm pb-4 bg-red-700'>
           <Link to='/about' onClick={() => setNavbarOpen(!navbarOpen)}>
                 <p className='py-3 text-white hover:text-black w-full'>About</p>
+            </Link>
+            <Link to='/intro' onClick={() => setNavbarOpen(!navbarOpen)}>
+                <p className='py-3 text-white hover:text-black w-full'>Intro</p>
             </Link>
         </div>
         }

@@ -10,6 +10,8 @@ import BlogitemDetails from './Projects/FetchingAndRouting/components/BlogItemDe
 
 import Header from './components/Header';
 
+import Intro from './views/Intro';
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Header />
         <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/intro" element={<Intro />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects/:projectId" element={<ViewProject />} />
             <Route path="/projects/FetchingAndRouting/blogs/:blogId" element={<BlogitemDetails />} />
