@@ -35,6 +35,8 @@ import {AiFillMediumSquare} from 'react-icons/ai'
 import {BsYoutube} from 'react-icons/bs'
 
 import ProjectItem from '../views/ProjectItem'
+import LatestProjectItem from '../views/LatestProjectItem'
+
 
 import {Link} from 'react-router-dom'
 
@@ -183,14 +185,20 @@ const LatestProjects = [
     {
         id: 1,
         name: 'Nxt Trendz Product Details',
-        image: 'src/assets/videos\jobby.mp4',
+        // image: 'https://imgur.com/a/BaJwpYa',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/nxt-trendz-product-details-output-v0.gif',
+
         title: 'NxtTrendzProductDetails',
+        url: 'https://nxt-trends.vercel.app/'
     },
      {
         id: 2,
-        name: 'Events',
-        image: 'src\assets\videos\nxt-trendz.mp4',
-        title: 'Events',
+        name: 'Jobby',
+        // image: 'https://imgur.com/a/Yr4Z2tT',
+        image: 'https://assets.ccbp.in/frontend/content/react-js/events-output.gif',
+
+        title: 'Jobby',
+        url: 'https://jobbyapp.vercel.app/'
     },
 ]
 
@@ -349,17 +357,17 @@ function Home() {
                                 <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
                                     <h1 className="text-5xl">📐</h1>
                                     <h1 className='text-white font-semibold text-lg mt-3'>Product Design</h1>
-                                    <p className='text-white font-light text-sm mt-2 text-center'>From UI, UX to Usability testing and Design systems</p>
+                                    {/* <p className='text-white font-light text-sm mt-2 text-center'>From UI, UX to Usability testing and Design systems</p> */}
                                 </div>
                                 <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
                                     <h1 className="text-5xl">🧑🏽‍💻</h1>
                                     <h1 className='text-white font-semibold text-lg mt-3 text-center'>Frontend Development</h1>
-                                    <p className='text-white font-light text-sm mt-2 text-center'>More React, SQLite, Node.js, Firebase, React Native projects are coming soon!</p>
+                                    {/* <p className='text-white font-light text-sm mt-2 text-center'>More React, SQLite, Node.js, Firebase, React Native projects are coming soon!</p> */}
                                 </div>
                                 <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
                                     <h1 className="text-5xl">📚</h1>
                                     <h1 className='text-white font-semibold text-lg mt-3'>Book Notes</h1>
-                                    <p className='text-white font-light text-sm mt-2 text-center'>Here I'll share some notes on the books that I read what I think about them etc..</p>
+                                    {/* <p className='text-white font-light text-sm mt-2 text-center'>Here I'll share some notes on the books that I read what I think about them etc..</p> */}
                                 </div>
                         </div>
                 </div>
@@ -369,7 +377,7 @@ function Home() {
 
                     <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
                         {LatestProjects.map(eachProject => (
-                            <ProjectItem key={eachProject.id} projectDetails={eachProject}/>
+                            <LatestProjectItem key={eachProject.id} projectDetails={eachProject}/>
                         ))}
                     </div>
                 </div>
