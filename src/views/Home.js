@@ -179,6 +179,20 @@ const ListOfProjects = [
 
 ]
  
+const LatestProjects = [
+    {
+        id: 1,
+        name: 'Nxt Trendz Product Details',
+        image: 'src/assets/videos\jobby.mp4',
+        title: 'NxtTrendzProductDetails',
+    },
+     {
+        id: 2,
+        name: 'Events',
+        image: 'src\assets\videos\nxt-trendz.mp4',
+        title: 'Events',
+    },
+]
 
 
 
@@ -349,9 +363,20 @@ function Home() {
                                 </div>
                         </div>
                 </div>
+                {/* Latest Projects */}
+                <div className='bg-gray-900 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
+                    <h1 className='text-3xl text-white font-semibold'><span className="font-light">Recent</span> Projects 🚀</h1>
+
+                    <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
+                        {LatestProjects.map(eachProject => (
+                            <ProjectItem key={eachProject.id} projectDetails={eachProject}/>
+                        ))}
+                    </div>
+                </div>
+
                 {/* Projects */}
                 <div className='bg-gray-900 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
-                    <h1 className='text-3xl text-white font-semibold'><span className="font-light">My</span> Projects 🚀</h1>
+                    <h1 className='text-3xl text-white font-semibold'><span className="font-light">Feature</span> Projects 🚀</h1>
 
                     <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10'>
                         {ListOfProjects.map(eachProject => (
