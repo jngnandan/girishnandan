@@ -195,7 +195,7 @@ const LatestProjects = [
         id: 2,
         name: 'Jobby',
         // image: 'https://imgur.com/a/Yr4Z2tT',
-        image: 'https://assets.ccbp.in/frontend/content/react-js/events-output.gif',
+        image: 'https://i.imgur.com/drnRCGX.gif',
 
         title: 'Jobby',
         url: 'https://jobbyapp.vercel.app/'
