@@ -230,7 +230,7 @@ I have been fortunate to work with several clients, both independently and as pa
 
 While working on these projects, I also realized the importance of DevOps and how it plays a vital role in the development lifecycle. As a result, I have been learning more about DevOps practices and tools, including Git, Jenkins, Docker, and Kubernetes.
 
-I am excited to continue honing my skills in both Frontend Development and DevOps, and to create innovative solutions that blend marketing and user experience with technology.      
+I am excited to continue honing my skills in both Frontend Development and DevOps, and to create innovative solutions that blend user experience with technology.      
       </p>
         </div>
         {/* My Skills */}
