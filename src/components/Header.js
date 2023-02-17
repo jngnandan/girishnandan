@@ -20,7 +20,7 @@ export default function Header() {
           </Link>
           </div>
 
-          <div className='flex flex-row m-5 invisible  md:visible'>
+          {/* <div className='flex flex-row m-5 invisible  md:visible'>
             <Link to='/about'>
                 <p className='mx-2 text-gray-200'>About</p>
             </Link>
@@ -30,7 +30,7 @@ export default function Header() {
             <Link to='/intro'>
                 <p className='mx-2 text-gray-200'>Intro</p>
             </Link>
-          </div>
+          </div> */}
 
           {navbarOpen?
             <button onClick={() => setNavbarOpen(!navbarOpen)} className='flex flex-col justify-center items-center sm:block md:hidden'>
