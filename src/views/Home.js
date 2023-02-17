@@ -200,6 +200,16 @@ const LatestProjects = [
         title: 'Jobby',
         url: 'https://jobbyapp.vercel.app/'
     },
+    {
+        id: 3,
+        name: 'Nxt Watch',
+        // image: 'https://imgur.com/a/Yr4Z2tT',
+        image: 'https://i.imgur.com/r7OWflr.gif',
+
+        title: 'Nxt Watch',
+        url: 'https://nxt-six.vercel.app/'
+    },
+
 ]
 
 
