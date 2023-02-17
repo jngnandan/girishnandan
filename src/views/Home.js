@@ -370,25 +370,25 @@ I am excited to continue honing my skills in both Frontend Development and DevOp
     
         {/* Skills */}
         <div className='bg-gray-800 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
-//         <h1 className='text-3xl text-white font-semibold'><span className="font-light">Better</span> Experience ⚒️</h1>
-//             <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-10'>
-//                                 <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
-//                                     <h1 className="text-5xl">📐</h1>
-//                                     <h1 className='text-white font-semibold text-lg mt-3'>Product Design</h1>
-//                                     {/* <p className='text-white font-light text-sm mt-2 text-center'>From UI, UX to Usability testing and Design systems</p> */}
-//                                 </div>
-//                                 <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
-//                                     <h1 className="text-5xl">🧑🏽‍💻</h1>
-//                                     <h1 className='text-white font-semibold text-lg mt-3 text-center'>Frontend Development</h1>
-//                                     {/* <p className='text-white font-light text-sm mt-2 text-center'>More React, SQLite, Node.js, Firebase, React Native projects are coming soon!</p> */}
-//                                 </div>
+        <h1 className='text-3xl text-white font-semibold'><span className="font-light">Better</span> Experience ⚒️</h1>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-10'>
+                                <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
+                                    <h1 className="text-5xl">📐</h1>
+                                    <h1 className='text-white font-semibold text-lg mt-3'>Product Design</h1>
+                                    {/* <p className='text-white font-light text-sm mt-2 text-center'>From UI, UX to Usability testing and Design systems</p> */}
+                                </div>
+                                <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
+                                    <h1 className="text-5xl">🧑🏽‍💻</h1>
+                                    <h1 className='text-white font-semibold text-lg mt-3 text-center'>Frontend Development</h1>
+                                    {/* <p className='text-white font-light text-sm mt-2 text-center'>More React, SQLite, Node.js, Firebase, React Native projects are coming soon!</p> */}
+                                </div>
 //                                 <div className='bg-gray-900 p-5 rounded-lg flex flex-col justify-center items-center'>
 //                                     <h1 className="text-5xl">📚</h1>
 //                                     <h1 className='text-white font-semibold text-lg mt-3'>Book Notes</h1>
 //                                     {/* <p className='text-white font-light text-sm mt-2 text-center'>Here I'll share some notes on the books that I read what I think about them etc..</p> */}
 //                                 </div>
-//                         </div>
-//                 </div>
+                        </div>
+                </div>
                 {/* Latest Projects */}
                 <div className='bg-gray-900 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
                     <h1 className='text-3xl text-white font-semibold'><span className="font-light">Recent</span> Projects 🚀</h1>
