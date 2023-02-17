@@ -225,11 +225,11 @@ function Home() {
         <div>
             <p className='text-white mt-6 font-light'>
 Hello! My name is Girish Nandan, and I am a recent graduate with a Masters in Marketing and User Experience. While studying, I discovered my passion for Frontend Development and how it plays a crucial role in delivering exceptional digital experiences.
-</br>
+<br>
 I have been fortunate to work with several clients, both independently and as part of a team, to build interactive web applications that are responsive and user-friendly. During my time working as a Frontend Developer, I have gained a deep understanding of HTML, CSS, JavaScript, and other related technologies, including React, Node.js.
-</br>
+<br>
 While working on these projects, I also realized the importance of DevOps and how it plays a vital role in the development lifecycle. As a result, I have been learning more about DevOps practices and tools, including Git, Jenkins, Docker, and Kubernetes.
-</br>
+<br>
 I am excited to continue honing my skills in both Frontend Development and DevOps, and to create innovative solutions that blend user experience with technology.      
       </p>
         </div>
