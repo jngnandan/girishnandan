@@ -220,10 +220,18 @@ function Home() {
         {/* Header */}
         <div className='bg-gray-900 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
         <h1 className='text-3xl text-white font-semibold'>Hi 👋, I'm Nandan</h1>
-        <h2 className='text-3xl text-white font-light'>I'm Product Designer & Frontend Developer</h2>
+        <h2 className='text-3xl text-white font-light'>I'm a Frontend Developer</h2>
 
         <div>
-            <p className='text-white mt-6 font-light'>These are my works I have been doing. I'll update Book section and Product Design section soon</p>
+            <p className='text-white mt-6 font-light'>
+Hello! My name is Girish Nandan, and I am a recent graduate with a Masters in Marketing and User Experience. While studying, I discovered my passion for Frontend Development and how it plays a crucial role in delivering exceptional digital experiences.
+
+I have been fortunate to work with several clients, both independently and as part of a team, to build interactive web applications that are responsive and user-friendly. During my time working as a Frontend Developer, I have gained a deep understanding of HTML, CSS, JavaScript, and other related technologies, including React, Node.js.
+
+While working on these projects, I also realized the importance of DevOps and how it plays a vital role in the development lifecycle. As a result, I have been learning more about DevOps practices and tools, including Git, Jenkins, Docker, and Kubernetes.
+
+I am excited to continue honing my skills in both Frontend Development and DevOps, and to create innovative solutions that blend marketing and user experience with technology.      
+      </p>
         </div>
         {/* My Skills */}
         <div className='grid grid-cols-6 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-10'>
