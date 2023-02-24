@@ -209,6 +209,15 @@ const LatestProjects = [
         title: 'Nxt Watch',
         url: 'https://nxt-six.vercel.app/'
     },
+    {
+        id: 4,
+        name: 'Movie App',
+        // image: 'https://imgur.com/a/Yr4Z2tT',
+        image: 'https://i.imgur.com/Gf9EeQT.jpg',
+
+        title: 'Movie App',
+        url: 'https://movie-app-self-two.vercel.app/login'
+    }
 
 ]
 
