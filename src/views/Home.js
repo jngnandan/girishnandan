@@ -213,7 +213,7 @@ const LatestProjects = [
         id: 4,
         name: 'Movie App',
         // image: 'https://imgur.com/a/Yr4Z2tT',
-        image: 'https://i.imgur.com/4KN3sWF.jpg',
+        image: 'https://i.imgur.com/kBtncRS.jpeg',
 
         title: 'Movie App',
         url: 'https://movie-app-self-two.vercel.app/login'
