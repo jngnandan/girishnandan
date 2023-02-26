@@ -229,7 +229,7 @@ function Home() {
         {/* Header */}
         <div className='bg-gray-900 px-6 md:px-16 lg:px-44 xl:px-60 py-10'>
         <h1 className='text-3xl text-white font-semibold'>Hi 👋, I'm Girish Nandan</h1>
-        <h2 className='text-3xl text-white font-light'>I'm a Frontend Developer</h2>
+        <h2 className='text-3xl text-white font-light'>I'm a UI Developer</h2>
 
         <div>
             <p className='text-white mt-6 font-light'>
