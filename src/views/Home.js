@@ -233,7 +233,7 @@ function Home() {
 
         <div>
             <p className='text-white mt-6 font-light'>
-Hello! My name is Girish Nandan, and I am a recent graduate with a Masters in Marketing and User Experience. While studying, I discovered my passion for Frontend Development and how it plays a crucial role in delivering exceptional digital experiences.
+Hello! My name is Girish Nandan, and I've done my Masters in Marketing and User Experience. While studying, I discovered my passion for UI Development and how it plays a crucial role in delivering exceptional digital experiences.
 <br/>
 <br/>
 I have been working to build interactive web applications that are responsive and user-friendly. During my time working as a Frontend Developer, I have gained a deep understanding of HTML, CSS, JavaScript, and other related technologies, including React, Node.js.
